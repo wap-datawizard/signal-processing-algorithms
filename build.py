@@ -11,7 +11,7 @@ ext_modules = [
         sources=["./src/signal_processing_algorithms/energy_statistics/e_divisive.c"],
         extra_compile_args=["-O3"],
         extra_link_args=[] if "Darwin" in platform.system() else ["-shared"],
-        optional=True,
+        optional=False,
     )
 ]
 
